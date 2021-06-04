@@ -42,4 +42,4 @@ with open('map.json') as f:
 with open("map.json", "w") as write_file:
     json.dump(map, write_file)
 
-findPath(map, 'K', 'BK')
+findPath(map, 'A', 'H')
