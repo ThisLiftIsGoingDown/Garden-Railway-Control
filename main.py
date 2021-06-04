@@ -2,10 +2,10 @@ import json
 
 
 
-def findPath(map, cazzo, culo):
+def findPath(map, ST, END):
     explored = []
-    queue = [[cazzo]]
-    if cazzo == culo:
+    queue = [[ST]]
+    if ST == END:
         return "Same"
     while queue:
         path = queue.pop(0)
@@ -17,7 +17,7 @@ def findPath(map, cazzo, culo):
                 quickpass.append(neighbour)
                 queue.append(quickpass)
                  
-                if neighbour == culo:
+                if neighbour == END:
                     print(quickpass)
                     return quickpass
             explored.append(node)
