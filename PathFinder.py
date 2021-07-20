@@ -39,7 +39,6 @@ with open('map.json') as f:
   map = json.load(f)
 
 
-with open("map.json", "w") as write_file:
-    json.dump(map, write_file)
+
 
 findPath(map, 'A', 'H')
